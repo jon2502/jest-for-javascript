@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person  {
+    first_name;
+    last_name;
+    date_Of_Birth;
+    eye_color
+    constructor(fname,lname,dob,ec) {
+        this.first_name=fname
+        this.last_name=lname
+        this.date_Of_Birth=dob
+        this.eye_color=ec
+    }
+    getfname(){
+        return this.first_name
+    }
+    getlname(){
+        return this.last_name
+    }
+    getdob(){
+        return this.date_Of_Birth
+    }
+    getec(){
+        return this.eye_color
+    }
+
+    setdob(newdob){
+        const re = /(^0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(\d{4}$)/
+        if (re.test(newdob)){
+            var yeardiff = 2022-re.exec(newdob)[3]
+            console.log(re.exec(newdob))
+            return yeardiff
+            if(ye){
+                return
+            }
+        } else {
+            return false
+        }
+    }
+}
+
+
+    let Brandr = new Person('Brandr','Svensson','30-04-1997','amber');
+    console.log(Brandr.setdob('30-04-1997'))
+
+    </script>
+</body>
+</html>
